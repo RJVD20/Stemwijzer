@@ -1,18 +1,31 @@
+<?php
+include 'includes/head.php';
+?>
+
 <!DOCTYPE html>
 <html>
-  <head>  
-    <meta charset="UTF-8">  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="stylesheet.css">
-  </head>
-  <body>|
+
+  <body>
+    <div class="content">
     <div class="welkombox">  
       <div class="welkomtext">
         <h1>
-          Welkom op onze site
+          Welkom bij de stem pijling
         </h1>
       </div>
+      </div>
+      <div class="emailbox">
+        <div class="email">
+          <h3>Ga door naar de volgende pagina om in te loggen:</h3>
+          <label for="email"></label>
+        <div class="buttonbox"> 
+          <div class="button">
+            <a type="submit" href="login.php">Verder</a>
+          </div>
+        </div>
+      </div>
+    </div>
     </div>
   </body>
-
 </html>
+

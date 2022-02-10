@@ -1,9 +1,16 @@
 body {
-    background: url(images/tweede_kamer.jpeg) no-repeat center center fixed; 
+    background: url(images/tweede_kamer.jpg) no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+}
+
+.content {
+    justify-content: center;
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(100%);
 }
 
 .welkombox {
@@ -11,6 +18,76 @@ body {
     justify-content: center;
     background-color: white;
     max-width: 50%;
+    margin: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+}
+
+.emailbox {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    max-width: 50%;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+}
+
+.button a {
+    display: inline-block;
+    padding: 0.35em 1.2em;
+    border: 0.1em solid black;
+    margin: 0 0.3em 0.3em 0;
+    border-radius: 0.12em;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family:'Roboto',sans-serif;
+    font-weight: 300;
+    color: black;
+    text-align: center;
+    transition: all 0.2s;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.button a:hover {
+    color:white;
+    background-color:black;
+}
+
+.buttonlogin {
+    display: inline-block;
+    padding: 0.35em 1.2em;
+    border: 0.1em solid black;
+    margin: 0 0.3em 0.3em 0;
+    border-radius: 0.12em;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family:'Roboto',sans-serif;
+    font-weight: 300;
+    color: black;
+    text-align: center;
+    transition: all 0.2s;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    background-color: white;
+}
+
+.buttonlogin:hover {
+    color:white;
+    background-color:black;
+}
+
+.buttonbox {
+    text-align-last: center;
+}
+
+.button {
+    text-align: center;
+}
+
+.code {
+    text-align: center;
 }
