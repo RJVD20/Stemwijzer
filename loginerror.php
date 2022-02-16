@@ -5,7 +5,11 @@ include 'includes/head.php';
 <!DOCTYPE html>
 <html>
     <body>
+
         <div class="content">
+            <div class="alert alert-danger" role="alert">
+                Deze code is niet gevonden in onze database, controlleer de code en probeer het opnieuw
+                </div>
             <div class="welkombox">
                 <div class="welkomtext">
                     <h1>Hier kunt u inloggen</h1>

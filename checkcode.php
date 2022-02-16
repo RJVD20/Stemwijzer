@@ -1,7 +1,8 @@
 
-
 <?php 
+include 'alert.php';
 
+session_start();
 $servername = "localhost";
 $username = "root";
 $password = "";
@@ -13,7 +14,7 @@ if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
 
-// Check if the code exists
+// Check if the code exists and is in the database
 $code = $_POST['code'];
 echo $code;
 
@@ -28,9 +29,12 @@ if ($result->num_rows > 0) {
     exit();
     }
 
-} else {
-  echo "Niet in database";
+  } else {
+    header("Location: loginerror.php");
+    exit();
+    
 }
+
 $conn->close();
 ?>
 
@@ -45,4 +49,8 @@ SELECT * FROM `codes` WHERE Codes = '';
 
 $conn->close();
 */
+
+
 ?>
+
+<script src="js/bootstrap.min.js"></script>

@@ -133,3 +133,16 @@ body {
 .partij {
     float: left;
 }
+
+.alert.alert-danger {
+    max-width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.alert-danger {
+    color: #000000;
+    font-weight: bold;
+    background-color: #ff0016;
+    border-color: #ff0019;
+}
