@@ -19,7 +19,7 @@ include 'includes/head.php';
                  <form method="post" action="checkcode.php">
                     <div class="code">
                         <h3><label for="code">Uw inlog code:</label><br></h3>
-                        <input class="code" type="text" name="code"></input>
+                        <input maxlength="8" minlength="8" class="code" type="text" name="code"></input>
                     </div>
                     <div class="button">
                         <button class="buttonlogin"type="submit">Code valideren</button>
