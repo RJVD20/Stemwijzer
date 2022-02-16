@@ -1,7 +1,8 @@
 
-
 <?php 
+include 'alert.php';
 
+session_start();
 $servername = "localhost";
 $username = "root";
 $password = "";
@@ -24,11 +25,15 @@ $result = $conn->query($sql);
 if ($result->num_rows > 0) {
   // output data of each row
   while($row = $result->fetch_assoc()) {
-    echo " In database";
-  }
-} else {
-  echo "Niet in database";
+    header("Location: vault.php");
+    exit();
+    }
+
+  } else {
+    header("Location: loginerror.php");
+    exit();
 }
+
 $conn->close();
 ?>
 
@@ -43,4 +48,8 @@ SELECT * FROM `codes` WHERE Codes = '';
 
 $conn->close();
 */
+
+
 ?>
+
+<script src="js/bootstrap.min.js"></script>
