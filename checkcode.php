@@ -13,7 +13,7 @@ if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
 
-// Check if the code exists
+// Check if the code exists and is in the database
 $code = $_POST['code'];
 echo $code;
 
