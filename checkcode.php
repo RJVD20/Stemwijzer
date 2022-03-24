@@ -1,12 +1,11 @@
-
 <?php 
 include 'alert.php';
 
 session_start();
 $servername = "localhost";
 $username = "root";
-$password = "";
-$dbname = "stempeiling";
+$password = "mysql1234";
+$dbname = "vote";
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
 // Check connection

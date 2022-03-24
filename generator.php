@@ -2,7 +2,7 @@
 
 $servername = "localhost";
 $username = "root";
-$password = "";
+$password = "mysql1234";
 $dbname = "stempeiling";
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);

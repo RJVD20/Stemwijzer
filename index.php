@@ -21,6 +21,7 @@ include 'includes/head.php';
         <div class="buttonbox"> 
           <div class="button">
             <a type="submit" href="login.php">Verder</a>
+            <a type="submit" href="cpanel.php">Uitslagen</a>
           </div>
         </div>
       </div>
